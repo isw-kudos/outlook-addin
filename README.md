@@ -1,3 +1,26 @@
+# outlook-addin
+Starter project for a Microsoft Outlook Add-In.
+
+## Getting Started
+Environment requires Node.js LTS, Git, Python (for node-gyp)
+
+Checkout the isw-kudos/devops repository next to this repository in your projects directory.
+
+`dev-client.isw.net.au` must resolve to your machine. You can edit your hosts or run your own DNS server.
+
+`npm i`
+
+[Add manifest.xml to Outlook](https://docs.microsoft.com/en-us/outlook/add-ins/sideload-outlook-add-ins-for-testing)
+
+`npm run start`
+
+Press 'Show Taskpane' in outlook and you will have a livereloading create-react-app based app in the sidebar.
+
+
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -7,7 +30,6 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.

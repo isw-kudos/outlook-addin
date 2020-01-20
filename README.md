@@ -16,7 +16,12 @@ Checkout the isw-kudos/devops repository next to this repository in your project
 
 Press 'Show Taskpane' in outlook and you will have a livereloading create-react-app based app in the sidebar.
 
-
+## HTTPS is Required
+- Outlook requires that Add-Ins are served over HTTPS. 
+- [CRA has HTTPS enabled](https://create-react-app.dev/docs/using-https-in-development/)
+- `scripts/cra-https-fix.ts` runs on postinstall
+    - [Cert gets copied into node_modules/webpack...](https://stackoverflow.com/a/50896905/4853706)
+    - [webpackHotDevClient.js gets modified!](https://github.com/facebook/create-react-app/pull/8079#issuecomment-562373869)
 
 
 

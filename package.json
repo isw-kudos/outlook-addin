@@ -11,6 +11,7 @@
     "@types/react": "^16.9.17",
     "@types/react-dom": "^16.9.4",
     "react": "^16.12.0",
+    "react-app-polyfill": "^1.0.5",
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "typescript": "^3.7.5"
@@ -19,8 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "validate": "office-toolbox validate -m manifest.xml",
+    "watch:manifest": "ts-node scripts/watch-manifest.ts",
+    "sideload": "office-toolbox sideload -m manifest.xml -a outlook",
     "postinstall": "npm run cra:https:fix",
     "cra:https:fix": "ts-node scripts/cra-https-fix.ts"
   },
